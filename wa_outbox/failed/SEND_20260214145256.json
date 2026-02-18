@@ -1,1 +1,1 @@
-{"contact": "Mama Jani U", "message": "Shukriya, From AI", "status": "failed", "error": "Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"[aria-label=\\\"Chat list\\\"]\") to be visible\n", "failed_at": "2026-02-14T14:54:04.010015"}
+{"contact": "Mother", "message": "Shukriya, From AI", "status": "failed", "error": "Page.wait_for_selector: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"[aria-label=\\\"Chat list\\\"]\") to be visible\n", "failed_at": "2026-02-14T14:54:04.010015"}
