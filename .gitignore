@@ -9,3 +9,4 @@ client_secret_*.json
 Logs/
 __pycache__/
 .venv/
+azure/connection.env

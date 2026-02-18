@@ -1,13 +1,13 @@
 ---
-file: EMAIL_189448d5b9e16bd4.md
+file: EMAIL_1896f714d45f31c6.md
 classification: informational
-processed: 2026-02-18 08:01
+processed: 2026-02-18 08:02
 ---
 
-# Plan: EMAIL_189448d5b9e16bd4
+# Plan: EMAIL_1896f714d45f31c6
 
 ## Classification: informational
-DreamHost domain registrar privacy/data sharing notice from do-not-reply
+WPForms setup welcome email with onboarding tips
 
 ## Recommended Action
 none

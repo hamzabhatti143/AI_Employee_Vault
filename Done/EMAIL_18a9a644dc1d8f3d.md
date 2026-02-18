@@ -2,7 +2,7 @@
 type: email
 from: Netlify <team@netlify.com>
 subject: [Netlify] Reset your password
-received: 2026-02-14T12:57:04.568065
+received: 2026-02-17T00:39:40.956270
 message_id: 18a9a644dc1d8f3d
 filter: important-unread
 ---
