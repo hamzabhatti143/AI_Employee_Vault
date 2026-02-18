@@ -1,8 +1,7 @@
 {
   "notifications": {
     "enabled": true,
-    "desktop": { "enabled": true },
-    "telegram": { "bot_token": "", "chat_id": "" }
+    "desktop": { "enabled": true }
   },
   "gmail": {
     "filters": [

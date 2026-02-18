@@ -3,5 +3,9 @@
 whatsapp_session/
 credentials.json
 token.json
+gmail_token.json
+client_secret_*.json
 *.pid
 Logs/
+__pycache__/
+.venv/

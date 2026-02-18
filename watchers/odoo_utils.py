@@ -1,10 +1,15 @@
 """Odoo XML-RPC utilities for the orchestrator."""
+import os
 import xmlrpc.client
+from pathlib import Path
+from dotenv import load_dotenv
 
-ODOO_URL = 'http://localhost:8069'
-ODOO_DB = 'odoo_main'
-ODOO_USER = 'admin'
-ODOO_PASS = 'admin'
+load_dotenv(Path(__file__).parent / '.env')
+
+ODOO_URL = os.getenv('ODOO_URL', 'http://localhost:8069')
+ODOO_DB = os.getenv('ODOO_DB', 'odoo_main')
+ODOO_USER = os.getenv('ODOO_USERNAME', 'admin')
+ODOO_PASS = os.getenv('ODOO_PASSWORD', 'admin')
 
 
 def _connect():

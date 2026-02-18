@@ -1,6 +1,9 @@
-import subprocess, logging
+import os, subprocess, logging
+from pathlib import Path
+from dotenv import load_dotenv
 from config import get_notification_config
 
+load_dotenv(Path(__file__).parent / '.env')
 logger = logging.getLogger(__name__)
 
 
@@ -12,9 +15,10 @@ def notify(title, body):
     if cfg.get('desktop', {}).get('enabled', True):
         _desktop_notify(title, body)
 
-    tg = cfg.get('telegram', {})
-    if tg.get('bot_token') and tg.get('chat_id'):
-        _telegram_notify(tg['bot_token'], tg['chat_id'], title, body)
+    bot_token = os.getenv('TELEGRAM_BOT_TOKEN', '')
+    chat_id = os.getenv('TELEGRAM_CHAT_ID', '')
+    if bot_token and chat_id:
+        _telegram_notify(bot_token, chat_id, title, body)
 
 
 def _desktop_notify(title, body):

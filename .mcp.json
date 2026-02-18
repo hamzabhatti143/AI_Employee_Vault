@@ -8,12 +8,7 @@
     "odoo": {
       "command": "odoo-mcp-server",
       "args": ["--stdio"],
-      "env": {
-        "ODOO_URL": "http://localhost:8069",
-        "ODOO_DB": "odoo_main",
-        "ODOO_USERNAME": "admin",
-        "ODOO_PASSWORD": "admin"
-      }
+      "envFile": "/mnt/d/ai-employee-vault/watchers/.env"
     }
   }
 }

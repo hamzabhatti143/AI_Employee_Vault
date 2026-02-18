@@ -1,12 +1,16 @@
+import os
 import xmlrpc.client, time, json
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).parent / '.env')
 
 VAULT = Path('/mnt/d/ai-employee-vault')
-ODOO_URL = 'http://localhost:8069'
-DB = 'odoo_main'
-USER = 'admin'
-PASSWORD = 'admin'
+ODOO_URL = os.getenv('ODOO_URL', 'http://localhost:8069')
+DB = os.getenv('ODOO_DB', 'odoo_main')
+USER = os.getenv('ODOO_USERNAME', 'admin')
+PASSWORD = os.getenv('ODOO_PASSWORD', 'admin')
 
 def get_connection():
     common = xmlrpc.client.ServerProxy(f'{ODOO_URL}/xmlrpc/2/common', allow_none=True)
