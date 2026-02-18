@@ -1,0 +1,35 @@
+{
+  "notifications": {
+    "enabled": true,
+    "desktop": { "enabled": true },
+    "telegram": { "bot_token": "", "chat_id": "" }
+  },
+  "gmail": {
+    "filters": [
+      { "name": "important-unread", "query": "is:unread is:important", "check_interval": 120 }
+    ]
+  },
+  "whatsapp": {
+    "check_interval": 30,
+    "default_keywords": [
+      "urgent", "asap", "emergency", "important",
+      "invoice", "payment", "bill", "amount", "transfer",
+      "help", "issue", "problem", "error", "bug",
+      "price", "quote", "estimate", "cost",
+      "deadline", "overdue", "reminder", "follow up",
+      "meeting", "call", "schedule",
+      "order", "delivery", "shipping",
+      "contract", "agreement", "proposal",
+      "please respond", "waiting", "pending", "confirm"
+    ],
+    "contact_rules": []
+  },
+  "social": {
+    "facebook": { "max_message_length": 63206 },
+    "instagram": { "max_caption_length": 2200 }
+  },
+  "twitter": {
+    "check_interval": 1800,
+    "max_tweet_length": 280
+  }
+}

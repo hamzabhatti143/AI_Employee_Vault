@@ -1,0 +1,7 @@
+.env
+*.json.token
+whatsapp_session/
+credentials.json
+token.json
+*.pid
+Logs/
