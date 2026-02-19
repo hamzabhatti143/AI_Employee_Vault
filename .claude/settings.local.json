@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(ldd:*)",
-      "Bash(fuser:*)"
+      "Bash(fuser:*)",
+      "Bash(az vm list-usage:*)",
+      "Bash(az account show:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
